@@ -1,5 +1,6 @@
-# TODO: Use arg
-FROM rclone/rclone:1.63
+ARG rclone_version
+
+FROM rclone/rclone:${rclone_version}
 
 ARG github_username
 ARG github_repository
